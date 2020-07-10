@@ -6,8 +6,10 @@ $cinzinha: #e4e2ff;
 $text-l-green: #92a3ab;
 $cinza-hr: #24272c;
 $link:#3b7adf;
+$dark:#0a0a0a;
 
 $title-color: $white;
+$scheme-main-bis:$dark;
 
 html {
   font-family: 'Nunito Sans', sans-serif;
@@ -49,31 +51,32 @@ hr {
   color: $cinzinha;
 }
 
+.navbar-item {
+  font-weight: bold;
+}
 
-// .navbar .navbar-item {
-//   color: #e4e2ff;
-// }
+.navbar-start a {
+  color: $white;
+}
 
-// .navbar .navbar-item.is-active {
-//   color: #e4e2ff;
-//   font-weight: 700;
-// }
+.navbar-start a:hover {
+  color: $cinzinha !important;
+  text-decoration: none;
+}
 
-// .navbar .navbar-item:hover {
-//   background: transparent;
-//   color: white;
-// }
-
-// .navbar .navbar-item a {
-//   margin-left: 1rem;
-//   color: #e4e2ff;
-// }
+.bar-margin {
+  padding: 0 0.75rem 0 0.75rem !important;
+}
 
 .blog-posts {
   min-height: 100vh;
   background: #191b1f;
   padding-top: 3rem;
   padding-bottom: 5rem;
+}
+
+.post-title {
+  margin-bottom: 1rem !important;
 }
 
 .blog-posts article {
