@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-07-08 18:37:49 -0300
 categories: jekyll update
-description: A descrição de um futuro post. Continue o aprendendo você está muito perto de terminar seu blog.
+description: A parte mais difícil já foi o layout. Agora se concentre em terminar as postagens.
 author: João Oliveira
 timeRead: 10 min read.
 ---

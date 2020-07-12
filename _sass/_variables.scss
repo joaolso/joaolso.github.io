@@ -7,13 +7,38 @@ $text-l-green: #92a3ab;
 $cinza-hr: #24272c;
 $link:#3b7adf;
 $dark:#0a0a0a;
+$font-color:hsla(0,0%,100%,.75);
+$background-color: #191b1f;
 
 $title-color: $white;
 $scheme-main-bis:$dark;
 
+#content br {display: none;}
+#content p br {display: inline;}
+
 html {
   font-family: 'Nunito Sans', sans-serif;
-  color: white;
+  color:$white;
+}
+.font-post-read p{
+  padding-bottom: 1em !important;
+}
+
+.bg-color{
+  background-color: $background-color;
+}
+
+.font-read{
+  font-family: 'IBM Plex Serif', serif;
+}
+.font-color {
+  color:$font-color !important;
+}
+
+.font-post-read{
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  color:$font-color !important;
+  font-size: 21px;
 }
 
 .va {
@@ -30,8 +55,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: $link;
+  // text-decoration: underline;
+  color: $title-color !important;
 }
 // linha divisoria
 hr {
@@ -102,9 +127,12 @@ hr {
   font-size: 1.2rem;
   font-family: 'IBM Plex Serif', serif;
   // color: #92a3ab;
-  color: hsla(0,0%,100%,.75);
+  color: $font-color;
 }
 
 .blog-posts .post .featured .featured-image img {
   height: 380px;
 }
+
+
+
