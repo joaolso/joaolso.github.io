@@ -1,0 +1,28 @@
+<div class="column post is-4">
+  <article class="columns is-multiline">
+    <div class="is-12 post-img">
+      <a href="{{ post.url }}"><img
+        src="https://cdn.emk.dev/templates/post-img.png"
+        alt="Featured Image"
+      /></a>
+    </div>
+    <div>
+      <h3 class="heading post-category category">
+        <a href="{{ post.url }}">
+          {{ post.categories }}
+        </a>
+      </h3>
+      <h1 class="title post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <p class="post-excerpt">
+        {{ post.description }}
+      </p>
+      <br>
+      <p class="category"><a class="">{{ post.author }}</a></p>
+      <time class="timeRead" datetime="2016-1-1">{{ post.date | date: "%-d %b, %Y" }} • {{ post.timeRead }}</time>
+    </div>
+  </article>
+</div>

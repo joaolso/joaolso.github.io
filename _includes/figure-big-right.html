@@ -1,0 +1,27 @@
+<div class="is-12 post">
+  <article class="columns featured">
+    <div class="column is-8 post-img">
+      <a href="{{ post.url }}"><img src="https://cdn.emk.dev/templates/featured-image.png" alt="" /></a>
+    </div>
+    <div class="column is-4 featured-content va">
+      <div>
+        <h3 class="heading post-category category">
+          <a href="{{ post.url }}">
+            {{ post.categories }}
+          </a>
+        </h3>
+        <h1 class="title post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h1>
+        <p class="post-excerpt">
+          {{ post.description }}
+        </p>
+        <br>
+        <p class="category"><a class="">{{ post.author }}</a></p>
+        <time class="timeRead" datetime="2016-1-1">{{ post.date | date: "%b, %-d %Y" }} • {{ post.timeRead }}</time>
+      </div>
+    </div>
+  </article>
+</div>

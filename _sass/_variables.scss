@@ -5,10 +5,12 @@ $white: #ffffff;
 $cinzinha: #e4e2ff;
 $text-l-green: #92a3ab;
 $cinza-hr: #24272c;
-$link:#3b7adf;
+$link:#15a5f8;
+$link-light:#15c3f8;
 $dark:#0a0a0a;
 $font-color:hsla(0,0%,100%,.75);
 $background-color: #191b1f;
+$textcz: #757575;
 
 $title-color: $white;
 $scheme-main-bis:$dark;
@@ -51,13 +53,22 @@ html {
 }
 
 a {
-  color: $link;
+  color: $white !important;
 }
 
 a:hover {
   // text-decoration: underline;
-  color: $title-color !important;
+  color: $cinzinha !important;
 }
+
+.category a {
+  color: $link !important;
+}
+
+.category a:hover {
+  color: $link-light !important;
+}
+
 // linha divisoria
 hr {
   background-color: $cinza-hr !important; 
@@ -121,7 +132,7 @@ hr {
 // }
 
 .blog-posts .post .post-excerpt {
-  text-align: justify;
+  text-align: left;
   line-height: 1.5rem;
   letter-spacing: .03rem;
   font-size: 1.2rem;
@@ -134,5 +145,8 @@ hr {
   height: 380px;
 }
 
-
+.timeRead {
+  font-weight: 500;
+  color:$textcz;
+}
 

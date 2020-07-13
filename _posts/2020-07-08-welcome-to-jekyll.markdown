@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-07-08 18:37:49 -0300
-categories: jekyll update
-description: A descrição de um futuro post. Continue o aprendendo você está muito perto de terminar seu blog.
+categories: I.A.
+description: A descrição de um futuro post. Continue aprendendo você está muito perto de terminar seu blog.
 author: João Oliveira
 timeRead: 10 min read.
 ---

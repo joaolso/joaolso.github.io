@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2020-07-08 18:37:49 -0300
+date:   2020-07-04 18:37:49 -0300
 categories: jekyll update
 description: A parte mais difícil já foi o layout. Agora se concentre em terminar as postagens.
 author: João Oliveira
