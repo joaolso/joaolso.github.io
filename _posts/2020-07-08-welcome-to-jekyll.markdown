@@ -1,11 +1,22 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Jekyll hands on!"
 date:   2020-07-08 18:37:49 -0300
-categories: I.A.
+categories: DataScience
 description: A descrição de um futuro post. Continue aprendendo você está muito perto de terminar seu blog.
 author: João Oliveira
 timeRead: 10 min read.
+
+tags: ["kaggle", "r"]
+
+image:
+  path: /assets/img/talking_data/main-16x9.jpg
+  height: 788
+  width: 1400
+thumb:
+  path: /assets/img/talking_data/main-thumb.jpg
+  height: 200
+  width: 300
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

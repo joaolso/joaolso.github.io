@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-07-06 18:37:49 -0300
-categories: jekyll update
+categories: Python
 description: Esse já é seu segundo post. Let's Rock e continue a produção está quase pronto.
 author: João Oliveira
 timeRead: 10 min read.

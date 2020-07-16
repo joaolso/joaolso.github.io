@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Jekyll fly!"
 date:   2020-07-05 18:37:49 -0300
-categories: jekyll update
+categories: Machine Learning
 description: Está quase lá hora de personalizar o layout e tudo fica ok.
 author: João Oliveira
 timeRead: 10 min read.

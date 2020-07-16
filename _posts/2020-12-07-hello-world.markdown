@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "fly jekyll!"
 date:   2020-07-04 18:37:49 -0300
-categories: jekyll update
+categories: Jekyll
 description: A parte mais difícil já foi o layout. Agora se concentre em terminar as postagens.
 author: João Oliveira
 timeRead: 10 min read.
