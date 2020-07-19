@@ -7,7 +7,7 @@ description: A descrição de um futuro post. Continue aprendendo você está mu
 author: João Oliveira
 timeRead: 10 min read.
 
-tags: ["kaggle", "r"]
+tags: python scikitlearn
 
 image:
   path: /assets/img/talking_data/main-16x9.jpg

@@ -8,10 +8,20 @@
           {{ page.description }}
         </h4>
         <hr>
+        <div class="field is-grouped is-grouped-multiline columns is-centered">
+          {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{%
+          endcapture %}
+          <div class="tags has-addons control">
+              <span class="tag is-dark"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+              <span class="tag is-link"></span>
+          </div>
+          {% endfor %}
+        </div>
         <p class="category">
           <a class="">{{ page.author }}</a>
           <time class="font-color timeRead" datetime="2016-1-1"
-            >{{ page.date | date: "%b, %-d %Y" }} • {{ page.timeRead }}</time>
+            >{{ page.date | date: "%b, %-d %Y" }} • {{ page.timeRead }}</time
+          >
         </p>
       </div>
     </div>

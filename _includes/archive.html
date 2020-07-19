@@ -1,0 +1,25 @@
+<h4 class="title is-4">Tags Complementares</h4>
+
+{% capture temptags %}
+    {% for tag in site.tags %}
+        {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }} 
+    {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+    {% for temptag in sortedtemptags %}
+    <div class="field is-grouped is-grouped-multiline columns is-centered">
+        {% assign tagitems = temptag | split: '#' %}
+        {% capture tagname %}
+            {{ tagitems[1] }}
+        {% endcapture %}
+
+  <div class="tags has-addons control">
+    <span class="tag is-dark">
+      <a href="/tag/{{ tag_name }}">{{ tagname }}</a></span>
+    <span class="tag is-link"></span>&nbsp;&nbsp;
+  </div>
+
+{% endfor %}
+</div>
+<!-- </div>
+</div> -->
