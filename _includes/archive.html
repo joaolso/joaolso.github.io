@@ -15,7 +15,7 @@
 
   <div class="tags has-addons control">
     <span class="tag is-dark">
-      <a href="/tag/{{ tag_name }}">{{ tagname }}</a></span>
+      <a href="/tag/{{ tagname | split:' ' }}">{{ tagname }}</a></span>
     <span class="tag is-link"></span>&nbsp;&nbsp;
   </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: python"
-tag: python
+title: "Tag: ggplot2"
+tag: ggplot2
 robots: noindex
 ---

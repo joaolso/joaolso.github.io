@@ -14,8 +14,8 @@
             <ul>
               {% for post in site.tags[page.tag] %}
               <li class="font-post-read">
-                <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date |
-                date_to_string }})<br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                 ({{ post.date | date_to_string }})<br>
                 {{ post.description }}
               </li>
               <br>

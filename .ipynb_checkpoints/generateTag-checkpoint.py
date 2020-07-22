@@ -2,31 +2,27 @@
 
 '''
 tag_generator-v1
-Adaptação: Joao Oliveira
 '''
 
 import glob
 import os
 
 post_dir = '_posts/'
-tag_dir  = 'tag/'
+tag_dir = 'tag/'
 
 filenames = glob.glob(post_dir + '*md')
 
 total_tags = []
 for filename in filenames:
-    f = open(filename, 'r', encoding='utf-8')
+    f = open(filename, 'r')
     crawl = False
     for line in f:
         if crawl:
             current_tags = line.strip().split()
-            try:
-                if current_tags[0] == 'tags:':
-                    total_tags.extend(current_tags[1:])
-                    crawl = False
-                    break
-            except:
-                print("valor null")
+            if current_tags[0] == 'tags:':
+                total_tags.extend(current_tags[1:])
+                crawl = False
+                break
         if line.strip() == '---':
             if not crawl:
                 crawl = True
@@ -34,7 +30,6 @@ for filename in filenames:
                 crawl = False
                 break
     f.close()
-    
 total_tags = set(total_tags)
 
 old_tags = glob.glob(tag_dir + '*.md')
@@ -47,8 +42,13 @@ if not os.path.exists(tag_dir):
 for tag in total_tags:
     tag_filename = tag_dir + tag + '.md'
     f = open(tag_filename, 'a')
-    write_str = '---\nlayout: tagpage\ntitle: \"Tag: ' + tag + '\"\ntag: ' + tag + '\nrobots: noindex\n---\n'
+    write_str = '---\n \
+    layout: tagpage\n \
+        title: \"Tag: ' + tag + '\"\n \
+            tag: ' + tag + '\n \
+                robots: noindex\n \
+                    --- \
+                        \n'
     f.write(write_str)
     f.close()
-    
 print("Tags generated, count", total_tags.__len__())
