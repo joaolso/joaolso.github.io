@@ -18,10 +18,10 @@ $scheme-main-bis:$dark;
 #content br {display: none;}
 #content p br {display: inline;}
 
-html {
-  font-family: 'Nunito Sans', sans-serif;
-  color:$white;
-}
+// html {
+//   font-family: 'Nunito Sans', sans-serif;
+//   color:$white;
+// }
 .font-post-read p{
   padding-bottom: 1em !important;
 }
@@ -131,7 +131,7 @@ hr {
 //   font-size: 2.2rem;
 // }
 
-.blog-posts .post .post-excerpt {
+.post-excerpt {
   text-align: left;
   line-height: 1.5rem;
   letter-spacing: .03rem;

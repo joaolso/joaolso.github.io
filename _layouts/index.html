@@ -2,7 +2,7 @@
 <html lang="pt-br" class="has-navbar-fixed-top">
   {% include head.html %}
   <body>
-    {% include header.html %}
+    {% include header-index.html %}
     <section class="blog-posts">
       <div class="container">
         <div class="column is-10 is-offset-1">
@@ -17,7 +17,7 @@
           </div>
           <hr>
           <div class="columns featured-post is-multiline">
-            {% for post in site.posts limit:1 %} {% include
+            {% for post in site.posts offset:3 limit:1 %} {% include
             figure-big-left.html %} {% endfor %}
           </div>
         </div>

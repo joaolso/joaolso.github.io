@@ -1,5 +1,14 @@
 <header>
-    {% include navbar.html %}
-
-  </header>
-  
+  {% include navbar.html %}
+  <section class="section">
+    <div class="container has-text-centered">
+      <div class="column is-6 is-offset-3">
+        <h1 class="title is-1 is-white">{{ page.title }}</h1>
+        <h4 class="subtitle is-4 font-color font-post-read">
+          {{ page.description }}
+        </h4>
+        <hr>
+      </div>
+    </div>
+  </section>
+</header>

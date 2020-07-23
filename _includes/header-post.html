@@ -12,21 +12,26 @@
           {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{%
           endcapture %}
           <div class="tags has-addons control">
-              <span class="tag is-dark"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
-              <span class="tag is-link"></span>
+              <span class="tag is-dark">
+                <a href="/tag/{{ tag_name }}">
+                  #{{ tag_name }}
+                </a>
+              </span>
           </div>
           {% endfor %}
         </div>
         <p class="category">
           <a class="">{{ page.author }}</a>
-          <time class="font-color timeRead" datetime="2016-1-1"
-            >{{ page.date | date: "%b, %-d %Y" }} • {{ page.timeRead }}</time
-          >
+          <time class="font-color timeRead" datetime="2016-1-1">
+            {{ page.date | date: "%b, %-d %Y" }} • {{ page.timeRead }}
+          </time>
         </p>
       </div>
     </div>
-    <div class="column is-8 is-offset-2">
-      <img src="https://cdn.emk.dev/templates/featured-image.png" alt="" />
+    <div class="column is-10 is-offset-1">
+      <figure class="image is-640x360">
+        <img src="https://bulma.io/images/placeholders/640x360.png">
+      </figure>
     </div>
   </section>
 </header>
