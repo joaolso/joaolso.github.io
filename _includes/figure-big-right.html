@@ -8,10 +8,8 @@
     <div class="column is-4 featured-content va">
       <div>
         <h3 class="heading post-category category">
-          {% for categories in post.categories %}
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            {{categories}}
-            {% endfor %}
+          <a href="/categories/{{ post.categories }}">
+            {{ post.categories }}
           </a>
         </h3>
         <h1 class="title post-title">
