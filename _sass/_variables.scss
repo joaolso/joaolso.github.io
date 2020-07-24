@@ -27,7 +27,7 @@ $scheme-main-bis:$dark;
 }
 
 .bg-color{
-  background-color: $background-color;
+  background-color: $background-color !important;
 }
 
 .font-read{
@@ -76,7 +76,7 @@ hr {
 }
 
 .hero {
-  background: #060606;
+  background: #060606 !important;
 }
 
 .navbar-end a {
@@ -150,3 +150,32 @@ hr {
   color:$textcz;
 }
 
+.dark-form {
+  color: $white!important;
+  background-color: $background-color!important;
+  border-color: $text-l-green;
+}
+
+textarea::-webkit-input-placeholder {
+  color: $white!important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: $white!important;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: $white!important;  
+}
+
+textarea:-ms-input-placeholder {
+  color: $white!important;  
+}
+
+textarea::placeholder {
+  color: $text-l-green!important;  
+}
+
+input::placeholder{
+  color: $text-l-green!important;
+}
