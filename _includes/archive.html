@@ -14,9 +14,12 @@
         {% endcapture %}
 
   <div class="tags has-addons control">
-    <span class="tag is-dark">
-      <a href="/tag/{{ tagname | split:' ' }}">{{ tagname }}</a></span>
-    <span class="tag is-link"></span>&nbsp;&nbsp;
+    <span class="tag is-dark is-large">
+      <a href="tag/{{ tagname | split: ' ' }}">
+        #{{ tagname }}
+      </a>
+    </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
   </div>
 
 {% endfor %}
