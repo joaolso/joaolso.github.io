@@ -9,7 +9,7 @@ $link:#15a5f8;
 $link-light:#15c3f8;
 $dark:#0a0a0a;
 $font-color:hsla(0,0%,100%,.75);
-$background-color: #191b1f;
+$background-color: #161e2e;
 $textcz: #757575;
 
 $title-color: $white;
@@ -22,8 +22,15 @@ $scheme-main-bis:$dark;
 //   font-family: 'Nunito Sans', sans-serif;
 //   color:$white;
 // }
+
+footer {
+  background-color: $background-color !important;
+}
 .font-post-read p{
   padding-bottom: 1em !important;
+}
+.index-post{
+  color: $font-color !important;
 }
 
 .bg-color{
@@ -76,15 +83,15 @@ hr {
 }
 
 .hero {
-  background: #060606 !important;
+  background:$background-color !important;
 }
 
 .navbar-end a {
-  color: $white;
+  color: $white!important;
 }
 
 .navbar-end a:hover{
-  color: $cinzinha;
+  color: $link!important;
 }
 
 .navbar-item {
@@ -93,11 +100,32 @@ hr {
 
 .navbar-start a {
   color: $white;
+  background-color: $background-color !important;
 }
 
 .navbar-start a:hover {
-  color: $cinzinha !important;
+  color: $white !important;
   text-decoration: none;
+}
+
+.navbar-start a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: $link;
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+
+.navbar-start a:hover:after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
 }
 
 .bar-margin {
@@ -106,7 +134,7 @@ hr {
 
 .blog-posts {
   min-height: 100vh;
-  background: #191b1f;
+  background: $background-color;
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
