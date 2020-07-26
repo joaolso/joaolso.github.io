@@ -15,5 +15,4 @@ kramdown:
 theme: minima
 plugins:
   - jekyll-feed
-
-
+  
