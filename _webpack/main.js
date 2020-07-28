@@ -1,2 +1,2 @@
 import './main.scss';
-import './js/index'
+import './js/bundle.js'

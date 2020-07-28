@@ -7,8 +7,6 @@ const globAll = require('glob-all');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool:'source-map',
   entry:{
     main: path.join(__dirname, './_webpack', 'main.js'),
   },
@@ -16,15 +14,24 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, './assets/css/')
   },
+  mode: "production",
   module: {
     rules:[{
-       test: /\.(scss)$/,
-       exclude: /node_modules/,
-       use: ExtractTextPlugin.extract({
-         fallback: 'style-loader',
-         use: ['css-loader','sass-loader']
-       })
-    }]
+      test: /\.jsx?$/,
+      exclude: /(node_modules)/,
+      loader: "babel-loader",
+      query: {
+        presets: ["@babel/preset-env"]
+      }
+    },
+    {
+      test: /\.(scss)$/,
+      exclude: /node_modules/,
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: ['css-loader','sass-loader']
+      })
+   }]
   },
   plugins: [
     new ExtractTextPlugin({
@@ -34,7 +41,7 @@ module.exports = {
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
-      cssProcessorOptions: {map: {inline:false, annotation:true}},
+      // cssProcessorOptions: {map: {inline:false, annotation:true}},
       cssProcessorPluginOptions: {
         preset: ['default', {discardComments: {removeAll: true}}]
       },

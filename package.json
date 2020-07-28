@@ -26,7 +26,7 @@
   "scripts": {
     "develop": "bundle exec jekyll clean && run-p develop:{webpack,jekyll}",
     "develop:jekyll": "sleep 5 && bundle exec jekyll serve --watch",
-    "develop:webpack": "webpack --mode development --watch",
+    "develop:webpack": "webpack --watch",
     "build": "run-s build:webpack build:jekyll",
     "build:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
     "build:webpack": "webpack --mode production"

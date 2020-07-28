@@ -9,9 +9,7 @@
   <!-- Script AMP PAGE --> 
   <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
   <!-- Script Font-awesome --> 
-  <script src="https://kit.fontawesome.com/15181efa86.js"crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="/assets/css/main.js"></script> -->
-  <script>
+  <script type="text/javascript" async>
     document.addEventListener('DOMContentLoaded', function () {
 
 // Get all "navbar-burger" elements
@@ -20,24 +18,29 @@ var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navb
 // Check if there are any nav burgers
 if ($navbarBurgers.length > 0) {
 
-// Add a click event on each of them
-$navbarBurgers.forEach(function ($el) {
-$el.addEventListener('click', function () {
+  // Add a click event on each of them
+  $navbarBurgers.forEach(function ($el) {
+    $el.addEventListener('click', function () {
 
-  // Get the target from the "data-target" attribute
-  var target = $el.dataset.target;
-  var $target = document.getElementById(target);
+      // Get the target from the "data-target" attribute
+      var target = $el.dataset.target;
+      var $target = document.getElementById(target);
 
-  // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-  $el.classList.toggle('is-active');
-  $target.classList.toggle('is-active');
+      // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+      $el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
 
-});
-});
+    });
+  });
 }
 
 });
-</script>
+  </script>
+  <script src="https://kit.fontawesome.com/15181efa86.js"crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="/assets/css/main.js"></script> -->
+  {% if page.js_bundle %}
+    <script type="text/javascript" src="/assets/css/{{ page.js_bundle}}.js" async></script>
+  {% endif %}
   
   <link rel="canonical" href="/index.html">
   <link rel="stylesheet" href="/assets/css/main.css" />
