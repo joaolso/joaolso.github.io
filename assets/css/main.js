@@ -86,6 +86,41 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./_webpack/js/index.js":
+/*!******************************!*\
+  !*** ./_webpack/js/index.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    // Check if there are any nav burgers
+    if ($navbarBurgers.length > 0) {
+    
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+    
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+    
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+    
+        });
+      });
+    }
+    
+    });
+
+/***/ }),
+
 /***/ "./_webpack/main.js":
 /*!**************************!*\
   !*** ./_webpack/main.js ***!
@@ -97,6 +132,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ "./_webpack/main.scss");
 /* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _js_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/index */ "./_webpack/js/index.js");
+/* harmony import */ var _js_index__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_index__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),

@@ -10,7 +10,7 @@ module.exports = {
   mode: 'development',
   devtool:'source-map',
   entry:{
-    main: path.join(__dirname, '_webpack', 'main'),
+    main: path.join(__dirname, './_webpack', 'main.js'),
   },
   output: {
     filename: "[name].js",

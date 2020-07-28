@@ -18,16 +18,26 @@ $scheme-main-bis:$dark;
 #content br {display: none;}
 #content p br {display: inline;}
 
-// html {
-//   font-family: 'Nunito Sans', sans-serif;
-//   color:$white;
-// }
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  color:$white;
+}
 
 footer {
   background-color: $background-color !important;
 }
+
+@media screen and (max-width: 1023px){
+.navbar-menu {
+  padding: 0;
+}}
+.navbar-burger {
+  color: $white;
+}
+
 .font-post-read p{
   padding-bottom: 1em !important;
+  color: $white;
 }
 .index-post{
   color: $font-color !important;
@@ -43,11 +53,18 @@ footer {
 .font-color {
   color:$font-color !important;
 }
+.font-post-read p{
+  font-family: 'Nunito Sans', sans-serif;
+}
 
 .font-post-read{
   font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   color:$font-color !important;
   font-size: 21px;
+}
+
+.is-white{
+  color: $white !important;
 }
 
 .va {
@@ -165,7 +182,6 @@ hr {
   letter-spacing: .03rem;
   font-size: 1.2rem;
   font-family: 'IBM Plex Serif', serif;
-  // color: #92a3ab;
   color: $font-color;
 }
 

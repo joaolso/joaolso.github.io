@@ -1,28 +1,33 @@
-<nav
-    class="navbar is-fixed-top bg-color"
-    role="navigation"
-    aria-label="main navigation">
-    <div class="column is-10 is-offset-1 bar-margin">
-      <div id="nav-brand" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="{{ site.baseurl }}/">João Oliveira</a>
-          <a class="navbar-item" href="/blogPosts.html">Blog Posts</a>
-          <a class="navbar-item" href="/contato.html">Contato</a>
-        </div>
+<nav class="navbar is-fixed-top bg-color" role="navigation" aria-label="main navigation">
+  <div class="container is-widescreen">
+    <div id="nav-brand" class="navbar-brand">
+      <a class="navbar-item" href="{{ site.baseurl }}/">João Oliveira</a>
+      <div class="navbar-burger burger bg-color" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item is-5">
-            <a class="column is-3" target="_blank" href="https://www.linkedin.com/in/{{ site.social_username }}/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="column is-3" target="_blank" href="https://www.github.com/{{ site.social_username }}">
-              <i class="fab fa-github"></i>
-            </a>
-            <a class="column is-3" target="_blank" href="https://www.twitter.com/{{ site.social_username }}">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/blogPosts.html">Blog Posts</a>
+        <a class="navbar-item" href="/contato.html">Contato</a>
+      </div>
+
+      <div class="navbar-end bg-color">
+        <div class="navbar-item is-5">
+          <a class="column is-3" target="_blank" href="https://www.linkedin.com/in/{{ site.social_username }}/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="column is-3" target="_blank" href="https://www.github.com/{{ site.social_username }}">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="column is-3" target="_blank" href="https://www.twitter.com/{{ site.social_username }}">
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
