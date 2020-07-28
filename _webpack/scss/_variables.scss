@@ -66,6 +66,9 @@ footer {
 .is-white{
   color: $white !important;
 }
+.is-dark{
+  background-color: $dark !important;
+}
 
 .va {
   display: flex;
@@ -82,9 +85,12 @@ a {
 
 a:hover {
   // text-decoration: underline;
-  color: $cinzinha !important;
+  color: $link !important;
 }
 
+a span h1:hover{
+  color: $link !important;
+}
 .category a {
   color: $link !important;
 }
@@ -95,8 +101,8 @@ a:hover {
 
 // linha divisoria
 hr {
-  background-color: $cinza-hr !important; 
-  background:$cinza-hr;
+  background-color: $font-color !important; 
+  background:$font-color;
 }
 
 .hero {
@@ -157,7 +163,8 @@ hr {
 }
 
 .post-title {
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
+  color: $white !important;
 }
 
 .blog-posts article {

@@ -1,4 +1,4 @@
-<h4 class="title is-4">Tags Complementares</h4>
+<h4 class="title is-4 post-title">Tags Complementares</h4>
 
 {% capture temptags %}
     {% for tag in site.tags %}
@@ -14,11 +14,13 @@
         {% endcapture %}
 
   <div class="tags has-addons control">
+    <a href="{{ site.baseurl }}/tag/{{ tagname | split: ' ' }}/">
     <span class="tag is-dark is-large">
-      <a href="{{ site.baseurl }}/tag/{{ tagname | split: ' ' }}/">
+      <h1>
         #{{ tagname }}
-      </a>
+      </h2>
     </span>
+  </a>
       &nbsp;&nbsp;&nbsp;&nbsp;
   </div>
 
