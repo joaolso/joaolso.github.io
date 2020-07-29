@@ -2,6 +2,8 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
+const ImageminPlugin = require ('imagemin-webpack-plugin').default;
+
 const glob = require('glob');
 const globAll = require('glob-all');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
@@ -31,7 +33,20 @@ module.exports = {
         fallback: 'style-loader',
         use: ['css-loader','sass-loader']
       })
-   }]
+   },
+   {
+    test: /\.(png|gif|jpe?g|svg)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          emitFile: true,
+          useRelativePath: true,
+          name: "[name].[ext]",
+        }
+      },
+    ]
+  }]
   },
   plugins: [
     new ExtractTextPlugin({
@@ -47,7 +62,6 @@ module.exports = {
       },
       canPrint:true
     }),
-
     new PurgecssPlugin({
       paths: globAll.sync([
         '*.html',
@@ -55,6 +69,14 @@ module.exports = {
         './_includes/*.html',
         './pages/*.html'
       ]),
+    }),
+    new ImageminPlugin({
+      externalImages: {
+        context: './', // Important! This tells the plugin where to "base" the paths at
+        sources: glob.sync('./_webpack/images/*'),
+        destination: './assets/images',
+        fileName: '[name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
+      }
     })
   ]
 }

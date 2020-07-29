@@ -23,8 +23,9 @@ html {
   color:$white;
 }
 
-footer {
+.footer {
   background-color: $background-color !important;
+  padding:0.5em 0 4em!important;
 }
 
 @media screen and (max-width: 1023px){
@@ -119,6 +120,7 @@ hr {
 
 .navbar-item {
   font-weight: bold;
+  // padding-left: 4em;
 }
 
 .navbar-start a {
@@ -159,7 +161,7 @@ hr {
   min-height: 100vh;
   background: $background-color;
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .post-title {
