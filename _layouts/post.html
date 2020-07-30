@@ -1,16 +1,16 @@
+
 <!DOCTYPE html>
-<html lang="pt-br" class="has-navbar-fixed-top">
+<html lang="pt-br" class="has-navbar-fixed-top bg-color">
   {% include head.html %}
   <body class="bg-color">
     {% include header-post.html %}
-    <section class="blog-posts">
+    <section id="content" class="blog-posts">
       <div class="container">
-        <div class="column is-8 is-offset-2 font-post-read">
+        <article class="column is-8 is-offset-2 font-post-read">
           {{ content }}
-        </div>
+        </article>
       </div>
     </section>
-      
     {% include footer.html %}
   </body>
 </html>

@@ -102,8 +102,8 @@ a span h1:hover{
 
 // linha divisoria
 hr {
-  background-color: $font-color !important; 
-  background:$font-color;
+  color: #4a4a4a!important; 
+  background-color: #4a4a4a!important;
 }
 
 .hero {
@@ -234,4 +234,17 @@ textarea::placeholder {
 
 input::placeholder{
   color: $text-l-green!important;
+}
+#read {
+  background: tomato;
+  position: fixed;  
+  height: 3.5px;  
+  width: 100%;
+  top: 0;
+  
+  &.hide { background: transparent; }
+}
+
+.footer-start{
+  padding: .5rem .75rem!important;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ang="pt-br" class="has-navbar-fixed-top">
+<html ang="pt-br" class="has-navbar-fixed-top bg-color">
   {% include head.html %}
   <body>
     {% include header-index.html %}
@@ -10,16 +10,15 @@
             {% for post in site.posts limit:1 %} {% include
             figure-big-right.html %} {% endfor %}
           </div>
-          <hr>
           <div class="columns is-multiline">
             {% for post in site.posts offset:1 limit:3 %} {% include
             figure-small3.html %} {% endfor %}
           </div>
-          <hr>
           <div class="columns featured-post is-multiline">
             {% for post in site.posts offset:3 limit:1 %} {% include
             figure-big-left.html %} {% endfor %}
           </div>
+          <hr>
         </div>
       </div>
     </section>
