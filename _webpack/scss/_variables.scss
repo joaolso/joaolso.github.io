@@ -106,6 +106,7 @@ a span h1:hover{
 
 // linha divisoria
 hr {
+  height: 1px;
   color: $white!important; 
   background-color: $white!important;
 }
@@ -323,7 +324,7 @@ input::placeholder{
   top: 5px;
 }
 
-#top-b {
+#top-b{
   font-size: 14px;
   font-weight: bold;
   border: none;
@@ -333,4 +334,17 @@ input::placeholder{
   bottom: 15%;
   right:5%;
   background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgb(20, 40, 97) 48%, rgba(0,152,219,1) 100%);
+}
+
+#top-b:hover {
+  background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgb(20, 40, 97) 28%, rgba(0,152,219,1) 100%);
+}
+
+#right-items{
+  direction: rtl;
+  display: flex-start!important;
+}
+
+.reset-padding {
+  padding: .75rem 0 .75rem 0 !important;
 }

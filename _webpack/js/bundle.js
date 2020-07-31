@@ -1,5 +1,11 @@
 window.onscroll = function () {
-  myFunction();
+  idExists = document.getElementById("myBar")
+  if (idExists){
+    myFunction();
+  }
+  else {
+    //pass
+  }
 };
 
 function myFunction() {
@@ -9,6 +15,7 @@ function myFunction() {
     document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+  console.log("bar note detect");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
