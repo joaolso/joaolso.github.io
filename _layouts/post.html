@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="has-navbar-fixed-top bg-color">
   {% include head.html %}
-  <body class="bg-color">
+  <body id="top" class="bg-color">
     {% include header-post.html %}
     <section id="content" class="blog-posts">
       <div class="container">
         <article class="column is-8 is-offset-2 font-post-read">
           {{ content }}
+          <hr>
         </article>
       </div>
+      <a id= "top-b" href="#top" class="button is-info"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </section>
     {% include footer.html %}
   </body>

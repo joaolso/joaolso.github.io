@@ -8,6 +8,7 @@ author: João Oliveira
 timeRead: 10 min read.
 
 tags: python scikitlearn
+js_bundle: true
 
 image:
   path: /assets/img/talking_data/main-16x9.jpg

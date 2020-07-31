@@ -1,12 +1,17 @@
-<nav class="navbar is-fixed-top bg-color column is-10 is-offset-1" role="navigation" aria-label="main navigation">
-  <div class="container">
+<nav
+  class="navbar is-fixed-top bg-color column"
+  role="navigation"
+  aria-label="main navigation">
+  <div id="pad-less" class="container column is-10 is-offset-1">
     <div id="nav-brand" class="navbar-brand">
       <a class="navbar-item" href="{{ site.baseurl }}/">
-      <picture>
-        <img src="/assets/images/logo.svg" alt="">
-      </picture>
+        <picture>
+          <img src="/assets/images/logo.svg" alt="" />
+        </picture>
       </a>
-      <div class="navbar-burger burger bg-color" data-target="navbarExampleTransparentExample">
+      <div
+        class="navbar-burger burger bg-color"
+        data-target="navbarExampleTransparentExample">
         <span></span>
         <span></span>
         <span></span>
@@ -21,17 +26,31 @@
 
       <div class="navbar-end bg-color">
         <div class="navbar-item is-5">
-          <a class="column is-4" target="_blank" href="https://www.linkedin.com/in/{{ site.social_username }}/">
+          <a
+            class="column is-4"
+            target="_blank"
+            href="https://www.linkedin.com/in/{{ site.social_username }}/">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a class="column is-4" target="_blank" href="https://www.github.com/{{ site.social_username }}">
+          <a
+            class="column is-4"
+            target="_blank"
+            href="https://www.github.com/{{ site.social_username }}">
             <i class="fab fa-github"></i>
           </a>
-          <a class="column is-4" target="_blank" href="https://www.twitter.com/{{ site.social_username }}">
+          <a
+            class="column is-4"
+            target="_blank"
+            href="https://www.twitter.com/{{ site.social_username }}">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
       </div>
     </div>
   </div>
+  {% if page.js_bundle == true %}
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  {% endif %}
 </nav>

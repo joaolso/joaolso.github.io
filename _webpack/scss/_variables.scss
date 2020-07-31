@@ -23,6 +23,10 @@ html {
   color:$white;
 }
 
+nav{
+  padding: 0!important;
+}
+
 .footer {
   background-color: $background-color !important;
   padding:0.5em 0 4em!important;
@@ -102,13 +106,24 @@ a span h1:hover{
 
 // linha divisoria
 hr {
-  color: #4a4a4a!important; 
-  background-color: #4a4a4a!important;
+  color: $white!important; 
+  background-color: $white!important;
 }
 
 .hero {
   background:$background-color !important;
 }
+
+// .banner-header{
+//   background-image: url(./images/header-index.png)!important;
+//   background-position: center center!important;
+//   background-repeat: no-repeat!important;
+//   background-size: cover!important;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   margin: auto;
+// }
 
 .navbar-end a {
   color: $white!important;
@@ -247,4 +262,75 @@ input::placeholder{
 
 .footer-start{
   padding: .5rem .75rem!important;
+}
+
+.progress-container {
+  position:relative;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgba(9,39,121,1) 48%, rgba(0,152,219,1) 100%);
+  width: 0%;
+}
+
+#pad-less{
+  padding: 0rem 0.75rem 0 0.75rem !important;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+#top-b {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 1rem!important;
+  float: left;
+  position: fixed;
+  bottom: 15%;
+  right:5%;
+  background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgb(20, 40, 97) 48%, rgba(0,152,219,1) 100%);
 }
