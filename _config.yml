@@ -15,4 +15,7 @@ kramdown:
 theme: minima
 plugins:
   - jekyll-feed
+
+
+google_analytics: 'UA-174212844-1'
   

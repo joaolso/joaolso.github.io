@@ -3,6 +3,10 @@
 <html lang="pt-br" class="has-navbar-fixed-top bg-color">
   {% include head.html %}
   <body id="top" class="bg-color">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVGQJV8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     {% include header-post.html %}
     <section id="content" class="blog-posts">
       <div class="container">
@@ -11,7 +15,11 @@
           <hr>
         </article>
       </div>
-      <a id= "top-b" href="#top" class="button is-info is-desktop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      <a href="#top">
+      <button id="back-to-top-btn">
+          <i class="fas fa-angle-double-up"></i>
+      </button>
+    </a>
     </section>
     {% include footer.html %}
   </body>

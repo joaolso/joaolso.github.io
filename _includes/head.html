@@ -23,4 +23,13 @@
   <link rel="canonical" href="./index.html" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
+
+  <!-- Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174212844-1"></script>
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+
 </head>

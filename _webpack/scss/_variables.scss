@@ -19,7 +19,7 @@ $scheme-main-bis:$dark;
 #content p br {display: inline;}
 
 html {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color:$white;
 }
 
@@ -59,7 +59,7 @@ nav{
   color:$font-color !important;
 }
 .font-post-read p{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-post-read{
@@ -347,4 +347,30 @@ input::placeholder{
 
 .reset-padding {
   padding: .75rem 0 .75rem 0 !important;
+}
+
+#back-to-top-btn {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgb(20, 40, 97) 48%, rgba(0,152,219,1) 100%); 
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+  background: $link;
+}
+
+#back-to-top-btn i{
+  color: $white;
 }
