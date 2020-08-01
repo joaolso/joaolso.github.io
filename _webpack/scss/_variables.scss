@@ -374,3 +374,13 @@ input::placeholder{
 #back-to-top-btn i{
   color: $white;
 }
+
+
+@media only screen and (max-width: 600px) {
+  #right-items{
+    text-align: center;
+  }
+  #acknowledges{
+    text-align: center;
+  }
+}

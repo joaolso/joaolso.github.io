@@ -1,3 +1,4 @@
+{% if site.tags != "" %} {% include collecttags.html %} {% endif %}
 <head>
   <title>{{ site.title }}</title>
   <meta charset="UTF-8" />
@@ -7,29 +8,24 @@
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-  <!-- <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript> -->
-
-  <!-- Script AMP PAGE -->
-  <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
   <!-- Script Font-awesome -->
-  
-  <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="/assets/css/main.js"></script>
-  <!-- {% if page.js_bundle %}
-  <script type="text/javascript" src="/assets/css/{{ page.js_bundle}}.js" async></script>
-  {% endif %} -->
+
+  <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"
+  ></script>
+  <script async type="text/javascript" src="/assets/css/main.js"></script>
 
   <link rel="canonical" href="./index.html" />
   <link rel="stylesheet" href="/assets/css/main.css" />
-  {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
 
-  <!-- Google Tag Manager -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174212844-1"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var burger = document.querySelector(".burger");
+      var nav = document.querySelector("#" + burger.dataset.target);
 
-{% if jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
-
+      burger.addEventListener("click", function () {
+        burger.classList.toggle("is-active");
+        nav.classList.toggle("is-active");
+      });
+    });
+  </script>
 </head>
