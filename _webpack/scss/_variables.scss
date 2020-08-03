@@ -111,8 +111,22 @@ hr {
   background-color: $white!important;
 }
 
-.hero {
-  background:$background-color !important;
+.hero-header {
+  // background:$background-color !important;
+  background-image: url(/assets/images/header.png)!important;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.bar-light{
+  height: 5px;
+  margin: 0 auto;
+  background: linear-gradient(16deg, rgba(20,30,46,1) 0%,rgba(0,152,219,1) 50%, rgba(20,30,46,1) 100%);
 }
 
 // .banner-header{
