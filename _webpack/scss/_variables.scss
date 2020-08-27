@@ -389,6 +389,10 @@ input::placeholder{
   color: $white;
 }
 
+justify-text{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
 
 @media only screen and (max-width: 600px) {
   #right-items{
