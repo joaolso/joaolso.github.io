@@ -33,7 +33,7 @@ Ao final deste artigo você conhecerá sobre:
 
 Me surpreende que atualmente não utilizamos as esturturas baseada em grafos como mais frequência que uitlizamos os dados estruturados ou semi-estruturados. Talvez o viés dos bancos de dados relacionaos ainda influenciem no pensamento das representações tabulares.
 
-As redes podem ter uma aparência a princípio estranha e meio bepalhafatosas, no entanto, entre nós e arestas as infomações podem estar bem mais explcítias do que imaginamos. Disto isto, a principal questão é: os humanos podem se beneficiar utilzando informações de estrutura baseadas em grafos, poderiam as máquinas também?
+As redes podem ter uma aparência a princípio estranha e meio difícil de interpretar, no entanto, entre nós e arestas as infomações podem estar bem mais explcítias do que imaginamos. Disto isto, a principal questão é: os humanos podem se beneficiar utilzando informações de estrutura baseadas em grafos, poderiam as máquinas também?
 
 Estamos falando de uma área "nova" a pesquisa em GNN está no trend topics de assuntos relacionados a IA. A imagem a seguir demonstra a timeline da evolução das pesqusias das redes neurais com um pequeno viés da Microsot, por Alex Gaunt, pesquisador da Microsoft.
 
