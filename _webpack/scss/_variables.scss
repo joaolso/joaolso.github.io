@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
 
-
 $white: #ffffff;
 $cinzinha: #e4e2ff;
 $text-l-green: #92a3ab;
@@ -10,7 +9,9 @@ $link-light:#15c3f8;
 $dark:#0a0a0a;
 $font-color:hsla(0,0%,100%,.75);
 $background-color: #161e2e;
+$bg-code: #0f1522;
 $textcz: #757575;
+$textmd: #e7e8eb;
 
 $title-color: $white;
 $scheme-main-bis:$dark;
@@ -20,7 +21,7 @@ $scheme-main-bis:$dark;
 
 html {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color:$white;
+  // color:$textmd;
 }
 
 nav{
@@ -42,7 +43,7 @@ nav{
 
 .font-post-read p{
   padding-bottom: 1em !important;
-  color: $white;
+  color: $font-color;
 }
 .index-post{
   color: $font-color !important;
@@ -394,6 +395,7 @@ justify-text{
   text-justify: inter-word !important;
 }
 
+
 @media only screen and (max-width: 600px) {
   #right-items{
     text-align: center;
@@ -401,4 +403,12 @@ justify-text{
   #acknowledges{
     text-align: center;
   }
+}
+
+#content > div > article > figure {
+  font-size: 1rem;
+}
+
+mark {
+  background-color: $bg-code !important;
 }
