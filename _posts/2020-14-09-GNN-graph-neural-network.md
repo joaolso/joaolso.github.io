@@ -19,6 +19,11 @@ thumb:
   path: /assets/images/post-GNN_Graph_Neural_Network-701x394.png
   height: 394
   width: 701
+
+listpost:
+  path: /assets/images/post-GNN_Graph_Neural_Network-339x226.png
+  height: 339
+  width: 226
 ---
 
 A Inteligência Artificial (IA) dentre as tecnologias disruptivas é maior delas e as redes neurais tem sua parcela de importância, porém, nesse artigo vamos falar um pouco sobre "Graph Neural Network" ou Redes Neurais baseada em grafos, que tem mostrado muito potêncial em pesquisas recentes.

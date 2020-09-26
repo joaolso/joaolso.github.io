@@ -10,7 +10,7 @@ permalink: /blogPosts.html
       <div class="column is-4 post-img">
         <a href="{{ post.url | prepend: site.baseurl }}">
           <figure class="image is-640x360">
-            <img src="https://bulma.io/images/placeholders/480x320.png" alt="figure-post" height="192" width="340">
+            <img src="{{ post.listpost.path }}" alt="figure-post" height="{{ post.height }}" width="{{ post.width }}">
           </figure>
         </a>
       </div>
