@@ -32,7 +32,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "develop": "bundle exec jekyll clean && run-p develop:{webpack,jekyll}",
+    "develop": "bundle exec jekyll clean && run-p develop:{pythonTags,webpack,jekyll}",
+    "develop:pythonTags": "sleep 2 && python generateTag.py",
     "develop:jekyll": "sleep 5 && bundle exec jekyll serve --watch",
     "develop:webpack": "webpack --watch",
     "build": "bundle exec jekyll clean && run-s build:webpack build:jekyll",
