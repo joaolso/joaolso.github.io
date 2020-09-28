@@ -8,12 +8,13 @@
         </a>
     </div>
     <div>
+      &nbsp;
       <h3 class="heading post-category category">
         <a href="/categories/{{ post.categories }}">
           {{ post.categories }}
         </a>
       </h3>
-      <h1 class="title post-title">
+      <h4 class="title is-4 post-title">
         <a href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
@@ -22,8 +23,11 @@
         {{ post.description }}
       </p>
       <br>
-      <p class="category"><a class="">{{ post.author }}</a></p>
-      <time class="timeRead" datetime="2016-1-1">{{ post.date | date: "%-d %b, %Y" }} • {{ post.timeRead }}</time>
+      <p class="category">
+        <a class="">{{ post.author }}</a><br>
+        <time class="timeRead" datetime="2016-1-1">{{ post.date | date: "%-d %b, %Y" }} • {{ post.timeRead }}</time>
+      </p>
+      
     </div>
   </article>
 </div>

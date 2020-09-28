@@ -3,7 +3,7 @@ layout: post
 title:  "GNN: Graph Neural Network"
 date:   2020-09-14 14:00:00 -0300
 categories: Graphs
-description: Generalização combinatória e raciocínio relacional, duas capacidades que precisam ser levandas em consideração caso desejamos que IAs performarem igual ou até melhor que os seres humanos.
+description: Generalização combinatória e raciocínio relacional, duas capacidades que precisam ser levandas em consideração caso desejamos que IAs performarem melhor que os humanos.
 author: João Oliveira
 timeRead: 10 min read.
 

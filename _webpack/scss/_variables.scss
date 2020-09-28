@@ -113,15 +113,15 @@ hr {
 }
 
 .hero-header {
-  // background:$background-color !important;
-  background-image: url(/assets/images/header.png)!important;
-  background-position: center center!important;
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  background:$background-color !important;
+  // background-image: url(/assets/images/header.png)!important;
+  // background-position: center center!important;
+  // background-repeat: no-repeat!important;
+  // background-size: cover!important;
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // margin: auto;
 }
 
 .bar-light{
@@ -198,8 +198,14 @@ hr {
   padding-bottom: 3rem;
 }
 
+.blog-posts-min {
+  background: $background-color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .post-title {
-  margin-bottom: 2rem !important;
+  margin-bottom: .5rem !important;
   color: $white !important;
 }
 
@@ -234,7 +240,7 @@ hr {
 
 .timeRead {
   font-weight: 500;
-  color:$textcz;
+  color: $font-color !important;
 }
 
 .dark-form {
