@@ -30,9 +30,9 @@ A Inteligência Artificial (IA) dentre as tecnologias disruptivas é maior delas
 
 Ao final deste artigo você conhecerá sobre:
 
-• Projeção e importâncias das Redes Neurais baseada em grafos
-• Um pouco sobre as Redes Convolucionais de grafos
-• Como criar um classificador de vértices com a biblioteca DGL
+- • Projeção e importâncias das Redes Neurais baseada em grafos
+- • Um pouco sobre as Redes Convolucionais de grafos
+- • Como criar um classificador de vértices com a biblioteca DGL
 
 > Por que grafos?
 
