@@ -3,7 +3,7 @@
     <div class="is-12 post-img">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <figure class="image is-480x320">
-          <img src="{{ post.thumb.path }}" alt="figure-post" height="{{ post.thumb.height }}"
+          <img src="{{ post.thumb.path }}" onerror="this.onerror=null;this.src='https://bulma.io/images/placeholders/640x360.png';" alt="figure-post" height="{{ post.thumb.height }}"
            width="{{ post.thumb.width }}">
         </figure>
         </a>
