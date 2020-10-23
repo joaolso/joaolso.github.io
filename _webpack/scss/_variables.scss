@@ -7,11 +7,11 @@ $cinza-hr: #24272c;
 $link:#15a5f8;
 $link-light:#15c3f8;
 $dark:#0a0a0a;
-$font-color:hsla(0,0%,100%,.75);
+$font-color:rgba(255, 255, 255, 0.904);
 $background-color: #161e2e;
 $bg-code: #0f1522;
 $textcz: #757575;
-$textmd: #e7e8eb;
+$textmd: #2c303b;
 
 $title-color: $white;
 $scheme-main-bis:$dark;
@@ -307,8 +307,6 @@ input::placeholder{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
   width: 50px;
   height: 50px;
   display: block;
@@ -324,7 +322,7 @@ input::placeholder{
   transition: all 0.3s ease;
 }
 #return-to-top i {
-  color: #fff;
+  color: #fff !important;
   margin: 0;
   position: relative;
   left: 16px;
@@ -340,7 +338,7 @@ input::placeholder{
   background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
-  color: #fff;
+  color: #fff !important;
   top: 5px;
 }
 
@@ -383,6 +381,7 @@ input::placeholder{
   border: none;
   border-radius: 50%;
   transition-duration: 0.2s;
+  color: $white;
   background: linear-gradient(16deg, rgba(20,30,46,1) 0%, rgb(20, 40, 97) 48%, rgba(0,152,219,1) 100%); 
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
