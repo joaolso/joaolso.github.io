@@ -7,8 +7,9 @@ $cinza-hr: #24272c;
 $link:#15a5f8;
 $link-light:#15c3f8;
 $dark:#0a0a0a;
-$font-color:#7e8d93;
-$background-color: #161e2e;
+$font-color:#B1AFB9;
+$background-color: #0f223a;
+// $background-color: linear-gradient(225deg, #1E4F6C 0%, #0E1C34 100%);
 $bg-code: #0f1522;
 $textcz: #757575;
 $textmd: #2c303b;
@@ -20,7 +21,7 @@ $scheme-main-bis:$dark;
 #content p br {display: inline;}
 
 html {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 nav{
@@ -52,20 +53,15 @@ nav{
   background-color: $background-color !important;
 }
 
-.font-read{
-  font-family: 'IBM Plex Serif', serif;
-}
 .font-color {
   color:$font-color !important;
 }
-.font-post-read p{
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
 
 .font-post-read{
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  // font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   color:$font-color !important;
-  font-size: 21px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .is-white{
@@ -158,7 +154,7 @@ hr {
 
 .navbar-start a {
   color: $white;
-  background-color: $background-color !important;
+  // background-color: $background-color !important;
 }
 
 .navbar-start a:hover {
@@ -185,7 +181,6 @@ hr {
   -webkit-transform: translateX(-50%) scaleX(1);
   transform: translateX(-50%) scaleX(1);
 }
-
 .bar-margin {
   padding: 0 0.75rem 0 0.75rem !important;
 }
@@ -288,7 +283,7 @@ input::placeholder{
 .progress-container {
   position:relative;
   width: 100%;
-  height: 8px;
+  // height: 8px;
   background: transparent;
 }
 

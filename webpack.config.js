@@ -33,20 +33,21 @@ module.exports = {
         fallback: 'style-loader',
         use: ['css-loader','sass-loader']
       })
-   },
-   {
-    test: /\.(png|gif|jpe?g|svg)$/i,
-    use: [
-      {
-        loader: 'file-loader',
-        options: {
-          emitFile: true,
-          useRelativePath: true,
-          name: "[name].[ext]",
-        }
-      },
-    ]
-  }]
+    }]
+  //  },
+  //  {
+  //   test: /\.(png|gif|jpe?g|svg)$/i,
+  //   use: [
+  //     {
+  //       loader: 'file-loader',
+  //       options: {
+  //         emitFile: true,
+  //         useRelativePath: true,
+  //         name: "[name].[ext]",
+  //       }
+  //     },
+  //   ]
+  // }]
   },
   plugins: [
     new ExtractTextPlugin({
@@ -69,14 +70,15 @@ module.exports = {
         './_includes/*.html',
         './pages/*.html'
       ]),
-    }),
-    new ImageminPlugin({
-      externalImages: {
-        context: './', // Important! This tells the plugin where to "base" the paths at
-        sources: glob.sync('./_webpack/images/*'),
-        destination: './assets/images',
-        fileName: '[name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
-      }
     })
+    // }),
+    // new ImageminPlugin({
+    //   externalImages: {
+    //     context: './', // Important! This tells the plugin where to "base" the paths at
+    //     sources: glob.sync('./_webpack/images/*'),
+    //     destination: './assets/images',
+    //     fileName: '[name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
+    //   }
+    // })
   ]
 }
