@@ -1,10 +1,10 @@
 ---
 layout: tagpage
-title: "Tag: pandas"
-tag: pandas
+title: "Tag: Pandas"
+tag: Pandas
 ---
 ---
 layout: tagpage
-title: "Tag: Pandas"
-tag: Pandas
+title: "Tag: pandas"
+tag: pandas
 ---
